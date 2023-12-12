@@ -62,5 +62,5 @@ func GetDBFolderPath() string {
 }
 
 func GetDBPath() string {
-	return fmt.Sprintf("/etc/%s/%s.db", GetName(), GetName())
+	return fmt.Sprintf("/etc/%s/%s.db", GetDBFolderPath(), GetName())
 }
